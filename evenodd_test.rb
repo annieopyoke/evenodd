@@ -32,4 +32,7 @@ class TestEvenOdd < Minitest::Test
 	def test_assert_that_evenOddChecker_says_2_is_even
 		assert_equal("even", evenOddChecker(2))
 	end
+	def test_assert_that_evenOddChecker_says_wombat_is_not_valid
+		assert_equal("You have not entered a valid number", evenOddChecker("wombat"))
+end
 end
